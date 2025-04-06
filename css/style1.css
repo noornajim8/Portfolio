@@ -1,0 +1,97 @@
+#my_name {
+    color: #6C4E31;
+    filter: drop-shadow(1px 1px 3px #603F26);
+
+}
+
+main h1 {
+    text-align: center;
+}
+
+.profile {
+    border-radius: 50%;
+    height: 50vh;
+    animation: flicker 3s infinite alternate;
+}
+
+@keyframes flicker {
+
+    0%,
+    25%,
+    75% {
+        box-shadow: 0px 0px 30px #6C4E31;
+    }
+
+    50%,
+    100% {
+        box-shadow: none;
+    }
+}
+
+.col-8 {
+    margin-left: 5%;
+    width: 40%;
+    align-self: last baseline;
+    font-size: x-large;
+    font-weight: bold;
+
+}
+
+.circle {
+    position: absolute;
+    z-index: -1;
+    width: 30%;
+    background-color: white;
+    border: 10px solid blue;
+    border-radius: 50%;
+    height: 30%;
+    filter: blur(100px);
+
+}
+
+.col-8 :hover {
+    font-style: oblique;
+    text-shadow: 3px 3px 5px #603F26;
+}
+
+@media (max-width:480px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .profile {
+        height: 25vh;
+    }
+
+    .col-8 {
+        width: 100%;
+
+    }
+
+    .col-4 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width:1023px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .profile {
+        height: 25vh;
+    }
+
+    .col-8 {
+        width: 100%;
+
+    }
+
+    .col-4 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+}

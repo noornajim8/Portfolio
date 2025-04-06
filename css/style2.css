@@ -1,0 +1,153 @@
+
+.edu {
+    margin-top: 20%;
+    margin-bottom: 30%;
+}
+
+.edu p {
+    text-align: center;
+    font-size: larger;
+    color: #603F26;
+}
+.edu img {
+    filter: drop-shadow(2px 2px 4px brown);
+    animation: opacy 20s infinite alternate;
+
+    position: absolute;
+    z-index: -1;
+}
+
+.star1 {
+    height: 2rem;
+    top: 20%;
+    right: 30%;
+    rotate: 10deg;
+}
+
+.star2 {
+    height: 3rem;
+    left: 2%;
+    top: 50%;
+    rotate: -20deg;
+}
+
+.star3 {
+    right: 2%;
+    height: 6rem;
+    rotate: 20deg;
+}
+
+.star4 {
+    height: 4rem;
+    left: 15%;
+    rotate: -10deg;
+}
+
+@keyframes opacy {
+
+    0%,
+    40%,
+    80%,
+    100% {
+        opacity: 0;
+    }
+
+    10%,
+    50%,
+    90% {
+        opacity: 1;
+    }
+}
+
+.desine {
+    height: 30rem;
+    width: 60rem;
+    top: 15%;
+    left: 18%;
+    position: absolute;
+    z-index: -1;
+    background-color: #C9B194;
+    border: 10px solid blue;
+    filter: blur(200px);
+    border-radius: 50%;
+}
+.card {
+    border-radius: 30px;
+    width: 30rem;
+    height: 15rem;
+    background-color: white;
+    box-shadow: 3px 3px 5px #6C4E31;
+    color: #603F26;
+    overflow: hidden;
+    justify-content: center;
+    justify-self: center;
+}
+.card img{
+    height: 17rem;
+    width: 100%;
+}
+
+.circle2 {
+    height: 90vh;
+    width: 80vw;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #C9B194;
+    border: 10px solid blue;
+    border-radius: 50%;
+    filter: blur(200px);
+}
+
+main h1 {
+    text-align: center;
+}
+
+.row {
+    margin-top: 5%;
+}
+
+
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+section {
+    animation: appear ease-in;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+
+}
+
+
+@media (max-width:480px) {
+    .row{
+        flex-direction: column;
+       align-items: center;
+    }
+    .card{
+        height: 50vh;
+        width: 100vw;
+    }
+    
+}
+@media (max-width:1023px){
+    .row{
+        flex-direction: column;
+       align-items: center;
+    }
+    .card{
+        height: 60vh;
+        width: 60vw;
+    }.desine{
+  display: none;
+    }
+}

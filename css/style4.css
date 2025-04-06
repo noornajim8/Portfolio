@@ -1,0 +1,54 @@
+form{
+    display: grid;
+}
+
+.col a{
+    color: #603F26;
+    font-size: larger;
+}
+.col a:hover{
+    font-size: x-large;
+}
+label{
+    font-weight: bold;
+}
+
+input,textarea{
+    margin-bottom: 3%;
+    outline: none;
+    border: solid 2px #603F26;
+    box-shadow: 3px 3px 5px #6C4E31;
+    padding: 1%;
+    border-radius: 10px; 
+    
+}
+#submit_btn{
+    width: 10rem;
+    border: solid 1px #603F26;
+    font-weight: bold;
+    font-size: larger;
+    box-shadow:3px 3px 0px #603F26;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    color: #603F26;
+}
+#submit_btn:hover{
+    box-shadow: none;
+    background-color: #6C4E31;
+    color: white;
+}
+.red{
+    color: red;
+    font-weight: normal;
+}
+.contact{
+    height: 90%;
+}
+@media (max-width:480px) {
+    .contact{
+    
+        width: 100%;
+    }   
+
+
+}
